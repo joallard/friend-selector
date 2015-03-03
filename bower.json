@@ -1,0 +1,26 @@
+{
+  "name": "friend-selector",
+  "version": "0.1.0",
+  "main": "build/friend-selector.js",
+  "authors": [
+    "Jonathan Allard <jonathan@allard.io>"
+  ],
+  "description": "A plugin to select a friend from Facebook",
+  "keywords": [
+    "friend",
+    "selector",
+    "facebook"
+  ],
+  "license": "AGPL",
+  "homepage": "https://github.com/joallard/friend-selector",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": [
+    "fb-login"
+  ]
+}
