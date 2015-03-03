@@ -23,7 +23,8 @@
     "grunt",
     "grunt-bower",
     "grunt-contrib-coffee",
-    "grunt-contrib-clean"
+    "grunt-contrib-clean",
+    "grunt-contrib-sass"
   ],
   "peerDependencies": [
     "fb-login"

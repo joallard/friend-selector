@@ -1,0 +1,83 @@
+[data-friend-selector], #friend-selector {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%; }
+  [data-friend-selector] .overlay, #friend-selector .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.4); }
+  [data-friend-selector] .dialog, #friend-selector .dialog {
+    position: relative;
+    z-index: 101;
+    max-width: 95%;
+    width: 30em;
+    background: white;
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 200px; }
+  [data-friend-selector] .friends, #friend-selector .friends {
+    min-height: 10em; }
+  [data-friend-selector] .friend, #friend-selector .friend {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0.5em 1em; }
+    [data-friend-selector] .friend.selected, #friend-selector .friend.selected {
+      background: rgba(171, 176, 186, 0.3); }
+    [data-friend-selector] .friend a, #friend-selector .friend a {
+      text-decoration: none; }
+    [data-friend-selector] .friend img, #friend-selector .friend img {
+      margin-right: 1em; }
+  [data-friend-selector] .title-bar, #friend-selector .title-bar {
+    background: #f2f2f2;
+    overflow: hidden;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0.4em 0.8em;
+    font-size: 0.9em; }
+    [data-friend-selector] .title-bar h1, #friend-selector .title-bar h1 {
+      margin: 0;
+      font-size: 1em; }
+    [data-friend-selector] .title-bar a.close, #friend-selector .title-bar a.close {
+      float: right;
+      color: #999;
+      text-decoration: none;
+      line-height: 1.1;
+      font-size: 1.2em; }
+  [data-friend-selector] .info.message, #friend-selector .info.message {
+    padding: 0.7em 1.1em;
+    color: #999; }
+  [data-friend-selector] .actions, #friend-selector .actions {
+    float: right; }
+  [data-friend-selector] .controls, #friend-selector .controls {
+    border-top: 1px solid #e6e6e6;
+    padding: 1em;
+    overflow: hidden; }
+    [data-friend-selector] .controls button.confirm, #friend-selector .controls button.confirm {
+      background: #5371ac;
+      border: 1px solid #42488a;
+      color: white; }
+    [data-friend-selector] .controls button, #friend-selector .controls button {
+      background: #e6e6e6;
+      border: 1px solid #cccccc;
+      color: #111;
+      font-size: 0.9em;
+      padding: 0.2em 0.6em;
+      border-radius: 2px;
+      font-weight: bold;
+      margin: 0; }
+  [data-friend-selector] .pagination, #friend-selector .pagination {
+    font-size: 0.9em;
+    color: #333333;
+    float: left; }
+    [data-friend-selector] .pagination button, #friend-selector .pagination button {
+      margin-right: 0.4em;
+      padding: 0.1em 0.3em; }
+
+/*# sourceMappingURL=friend-selector.css.map */
