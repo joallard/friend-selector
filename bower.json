@@ -20,7 +20,7 @@
     "test",
     "tests"
   ],
-  "dependencies": [
-    "fb-login"
-  ]
+  "dependencies": {
+    "fb-login": "0.1.0-alpha"
+  }
 }
