@@ -31,9 +31,9 @@ $("#foo").click(function(){
 That's pretty much it.
 
 ### Dependencies
+* [FBLogin](https://github.com/joallard/fb-login)
 * jQuery
 * Lo-dash
-
 
 Options
 -------
