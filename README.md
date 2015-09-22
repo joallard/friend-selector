@@ -35,6 +35,15 @@ That's pretty much it.
 * jQuery
 * Lo-dash
 
+Builds
+------
+Find builds in the `build/` folder.
+
+* `friend-selector.js`: Standalone build
+* `friend-selector.min.js`: Standalone minified build
+* `friend-selector.all.js`: With FBLogin bundled
+* `friend-selector.all.min.js`: With FBLogin bundled, minified
+
 Options
 -------
 ### selectCallback

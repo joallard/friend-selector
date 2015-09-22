@@ -1,6 +1,6 @@
 {
   "name": "friend-selector",
-  "version": "0.1.0-alpha",
+  "version": "0.1.0",
   "main": "build/friend-selector.js",
   "authors": [
     "Jonathan Allard <jonathan@allard.io>"

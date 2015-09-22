@@ -1,6 +1,6 @@
 {
   "name": "friend-selector",
-  "version": "0.1.0-alpha",
+  "version": "0.1.0",
   "description": "A plugin to select a friend from Facebook",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,14 +19,16 @@
   "bugs": {
     "url": "https://github.com/joallard/friend-selector/issues"
   },
-  "devDependencies": [
-    "grunt",
-    "grunt-bower",
-    "grunt-contrib-coffee",
-    "grunt-contrib-clean",
-    "grunt-contrib-sass"
-  ],
-  "peerDependencies": [
-    "fb-login"
-  ]
+  "dependencies": {
+    "fb-login": "0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "",
+    "grunt-bower": "",
+    "grunt-contrib-coffee": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-sass": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-concat": ""
+  }
 }
