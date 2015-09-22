@@ -1,6 +1,8 @@
 # friend-selector
 A friend selector in Javascript
 
+[Demo](https://joallard.github.io/friend-selector)
+
 Usage
 -----
 Put an empty `div` for FS to do its dirty business in:
@@ -28,20 +30,24 @@ $("#foo").click(function(){
 
 That's pretty much it.
 
+### Dependencies
+* jQuery
+* Lo-dash
+
+
 Options
 -------
 
-    elementSelector: "[data-friend-selector]"
-    pagination: 10
-    selectCallback: ->
-    confirm: true
-    dictionary:
-      {
-        title: "Choose a friend"
-        confirm: "Choose"
-        loading: "Loading..."
-        noFriends: "No friends are using this app yet."
-      }
+    elementSelector: '[data-friend-selector]',
+    pagination: 10,
+    selectCallback: function (){},
+    confirm: true,
+    dictionary: {
+        title: 'Choose a friend',
+        confirm: 'Choose',
+        loading: 'Loading...',
+        noFriends: 'No friends are using this app yet.'
+    }
 
 Contributing
 ------------
