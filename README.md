@@ -37,17 +37,45 @@ That's pretty much it.
 
 Options
 -------
+### selectCallback
+Default: `function(friend){}`
 
-    elementSelector: '[data-friend-selector]',
-    pagination: 10,
-    selectCallback: function (friend){},
-    confirm: true,
-    dictionary: {
-        title: 'Choose a friend',
-        confirm: 'Choose',
-        loading: 'Loading...',
-        noFriends: 'No friends are using this app yet.'
-    }
+Called when user has made a selection. `friend` is an object 
+with properties `name` and `id` (which corresponds to an
+element of the array of the response to `FB.api('/me/friends')`)
+
+Example: `friend = {name: "Max Power", id: 4294967296}`
+
+### confirm
+Default: `true`
+
+Determines what happens when the user selects a friend.
+Setting it to `false` will hide the Choose button, and
+trigger `selectCallback` as soon as the friend is clicked on.
+
+### dictionary
+Default: 
+```
+{
+    title: 'Choose a friend',
+    confirm: 'Choose',
+    loading: 'Loading...',
+    noFriends: 'No friends are using this app yet.'
+}
+```
+
+Dictionary of strings displayed to the user. Useful for I18n.
+
+### elementSelector
+Default: `'[data-friend-selector]'`
+
+Selector for the empty element Friend Selector will make
+its nest in.
+
+### pagination
+Default: 10
+
+Maximum number of friends displayed per selector page.
 
 Contributing
 ------------
