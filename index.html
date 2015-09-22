@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Selector for Facebook Apps</title>
+  <link rel="stylesheet" href="/friend-selector/build/friend-selector.css">
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+  <!-- http://codepen.io/joallard/pen/gaMNZZ -->
+</head>
+
+<body>
+  <h1>Friend selector</h1>
+  <a data-choose href='#'>Choose a friend</a>
+  <p>
+  Friend data is simulated because the friends API
+  call returns only friends who use this application.
+  </p>
+
+  <a href='https://github.com/joallard/friend-selector'>
+    github:joallard/friend-selector
+  </a>
+
+  <div data-friend-selector></div>
+
+
+  <script src='/friend-selector/build/friend-selector.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js'></script>
+
+  <script>
+    (function () {
+        $(function () {
+            return $('[data-choose]').click(function () {
+                return FriendSelector.launch();
+            });
+        });
+        window.FBLogin = {
+            ensurePermission: function () {
+                var d;
+                d = $.Deferred();
+                setTimeout(function () {
+                    return d.resolve();
+                }, 1);
+                return d;
+            }
+        };
+        window.FB = {
+            api: function (node, cb) {
+                if (node !== '/me/friends') {
+                    return;
+                }
+                setTimeout(function () {
+                    var response;
+                    response = {
+                        data: [
+                            {
+                                name: 'Sandra Narayanansen',
+                                id: 100010326642460
+                            },
+                            {
+                                name: 'Sharon Qinescu',
+                                id: 100010270693767
+                            }
+                        ]
+                    };
+                    return cb.call(this, response);
+                }, 500);
+            }
+        };
+    }.call(this));
+  </script>
+</body>
+</html>
